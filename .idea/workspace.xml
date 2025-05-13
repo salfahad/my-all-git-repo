@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="16c8ea51-6120-4984-9e5e-ee2f237280dd" name="Changes" comment="commit">
+      <change afterPath="$PROJECT_DIR$/DataProcessing_samlab_010/filename.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/certifi-2024.8.30.dist-info/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/certifi-2024.8.30.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/certifi-2024.8.30.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/certifi-2024.8.30.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/certifi-2024.8.30.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/certifi/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/certifi/__main__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/certifi/cacert.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/certifi/core.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/certifi/py.typed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/charset_normalizer-3.4.0.dist-info/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/charset_normalizer-3.4.0.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/charset_normalizer-3.4.0.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/charset_normalizer-3.4.0.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/charset_normalizer-3.4.0.dist-info/entry_points.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/charset_normalizer-3.4.0.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/charset_normalizer/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/charset_normalizer/__main__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/charset_normalizer/api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/charset_normalizer/cd.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/charset_normalizer/cli/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/charset_normalizer/cli/__main__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/charset_normalizer/constant.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/charset_normalizer/legacy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/charset_normalizer/md.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/charset_normalizer/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/charset_normalizer/py.typed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/charset_normalizer/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/charset_normalizer/version.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/idna-3.10.dist-info/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/idna-3.10.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/idna-3.10.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/idna-3.10.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/idna/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/idna/codec.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/idna/compat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/idna/core.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/idna/idnadata.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/idna/intranges.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/idna/package_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/idna/py.typed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/idna/uts46data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/requests-2.32.3.dist-info/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/requests-2.32.3.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/requests-2.32.3.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/requests-2.32.3.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/requests-2.32.3.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/requests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/requests/__version__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/requests/_internal_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/requests/adapters.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/requests/api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/requests/auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/requests/certs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/requests/compat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/requests/cookies.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/requests/exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/requests/help.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/requests/hooks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/requests/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/requests/packages.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/requests/sessions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/requests/status_codes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/requests/structures.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/requests/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3-2.2.3.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3-2.2.3.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3-2.2.3.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3-2.2.3.dist-info/licenses/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3/_base_connection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3/_collections.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3/_request_methods.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3/_version.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3/connection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3/connectionpool.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3/contrib/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3/contrib/emscripten/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3/contrib/emscripten/connection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3/contrib/emscripten/emscripten_fetch_worker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3/contrib/emscripten/fetch.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3/contrib/emscripten/request.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3/contrib/emscripten/response.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3/contrib/pyopenssl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3/contrib/socks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3/exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3/fields.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3/filepost.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3/http2/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3/http2/connection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3/http2/probe.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3/poolmanager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3/py.typed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3/response.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3/util/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3/util/connection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3/util/proxy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3/util/request.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3/util/response.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3/util/retry.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3/util/ssl_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3/util/ssl_match_hostname.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3/util/ssltransport.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3/util/timeout.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3/util/url.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3/util/util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cognito-token-broker/.aws-sam/deps/f944260a-732e-4eee-8838-d2f31526c296/urllib3/util/wait.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/cognito-token-broker" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2mnivUvYXguqFN6B6L20HCxmPJg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/fahad/AwsDevOpps/my-all-git-repo&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Python.Unnamed (2)">
+    <configuration name="Unnamed (1)" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="my-all-git-repo" />
+      <option name="ENV_FILES" value="$PROJECT_DIR$" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="software.aws.toolkits.jetbrains.core.execution.PythonAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </EXTENSION>
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="my-all-git-repo" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="software.aws.toolkits.jetbrains.core.execution.PythonAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </EXTENSION>
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="my-all-git-repo" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="software.aws.toolkits.jetbrains.core.execution.PythonAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </EXTENSION>
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.Unnamed (2)" />
+      <item itemvalue="Python.Unnamed (1)" />
+      <item itemvalue="Python.Unnamed" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="16c8ea51-6120-4984-9e5e-ee2f237280dd" name="Changes" comment="" />
+      <created>1727718972007</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1727718972007</updated>
+    </task>
+    <task id="LOCAL-00001" summary="commit">
+      <option name="closed" value="true" />
+      <created>1736835071002</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1736835071002</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+  </component>
+</project>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="" />
+    <mapping directory="$PROJECT_DIR$/DataProcessing_samlab_010" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cognito-token-broker" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/my-first-repo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/my-first-sam-app" vcs="Git" />
+  </component>
+</project>

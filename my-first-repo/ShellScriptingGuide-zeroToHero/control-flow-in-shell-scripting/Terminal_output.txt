@@ -1,0 +1,183 @@
+## Control Flow in Shell Scripting ##
+
+[ec2-user@ip-172-31-60-84 ~]$ cd my-project-repo/
+[ec2-user@ip-172-31-60-84 my-project-repo]$ cd my-first-repo/
+[ec2-user@ip-172-31-60-84 my-first-repo]$ cd ShellScriptingGuide-zeroToHero/
+[ec2-user@ip-172-31-60-84 ShellScriptingGuide-zeroToHero]$ cd control-flow-in-shell-scripting/
+
+##if-else
+[ec2-user@ip-172-31-60-84 control-flow-in-shell-scripting]$ sh if-else.sh 
+The file test2.txt exists.
+10 is not greater than 20.
+
+##for_loop
+[ec2-user@ip-172-31-60-84 control-flow-in-shell-scripting]$ sh for_loop.sh 
+Hello, Fahad!
+Hello, Bilal!
+Hello, Jahan!
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+Iteration 5
+Iteration 6
+Iteration 7
+Iteration 8
+Iteration 9
+
+##while_loop
+[ec2-user@ip-172-31-60-84 control-flow-in-shell-scripting]$ aws configure
+AWS Access Key ID [****************ZXDU]: AKIA5F4EHC
+AWS Secret Access Key [****************Clf3]: 
+Default region name [us-est-1]: us-east-1
+Default output format [None]: 
+[ec2-user@ip-172-31-60-84 control-flow-in-shell-scripting]$ sh while_loop.sh 
+Instance is now running.
+[ec2-user@ip-172-31-60-84 control-flow-in-shell-scripting]$ 
+
+##until_loop
+[ec2-user@ip-172-31-60-84 control-flow-in-shell-scripting]$ sh until_loop.sh 
+Count is 2
+Count is 4
+Count is 6
+Count is 8
+[ec2-user@ip-172-31-60-84 control-flow-in-shell-scripting]$ 
+
+##Case
+[ec2-user@ip-172-31-60-84 control-flow-in-shell-scripting]$ sh case.sh
+Invalid option.
+Option Car selected.
+[ec2-user@ip-172-31-60-84 control-flow-in-shell-scripting]$ 
+
+##Practical Examples Using Control Flow
+
+#Example: Backup Files to S3 Using a for Loop
+**(with --recursive)
+
+[ec2-user@ip-172-31-60-84 control-flow-in-shell-scripting]$ sh backup_files_to_S3_using_for_Loop.sh 
+warning: Skipping file /home/ec2-user/my-project-repo/my-first-repo/ShellScriptingGuide-zeroToHero/control-flow-in-shell-scripting/Terminal_output.txt/. File does not exist.
+                                                              
+Uploaded /home/ec2-user/my-project-repo/my-first-repo/ShellScriptingGuide-zeroToHero/control-flow-in-shell-scripting/Terminal_output.txt to my-new-bucket-fullofpotato
+warning: Skipping file /home/ec2-user/my-project-repo/my-first-repo/ShellScriptingGuide-zeroToHero/control-flow-in-shell-scripting/backup_files_to_S3_using_for_Loop.sh/. File does not exist.
+                                                              
+Uploaded /home/ec2-user/my-project-repo/my-first-repo/ShellScriptingGuide-zeroToHero/control-flow-in-shell-scripting/backup_files_to_S3_using_for_Loop.sh to my-new-bucket-fullofpotato
+warning: Skipping file /home/ec2-user/my-project-repo/my-first-repo/ShellScriptingGuide-zeroToHero/control-flow-in-shell-scripting/case.sh/. File does not exist.
+                                                              
+Uploaded /home/ec2-user/my-project-repo/my-first-repo/ShellScriptingGuide-zeroToHero/control-flow-in-shell-scripting/case.sh to my-new-bucket-fullofpotato
+warning: Skipping file /home/ec2-user/my-project-repo/my-first-repo/ShellScriptingGuide-zeroToHero/control-flow-in-shell-scripting/for_loop.sh/. File does not exist.
+                                                              
+Uploaded /home/ec2-user/my-project-repo/my-first-repo/ShellScriptingGuide-zeroToHero/control-flow-in-shell-scripting/for_loop.sh to my-new-bucket-fullofpotato
+warning: Skipping file /home/ec2-user/my-project-repo/my-first-repo/ShellScriptingGuide-zeroToHero/control-flow-in-shell-scripting/if-else.sh/. File does not exist.
+                                                              
+Uploaded /home/ec2-user/my-project-repo/my-first-repo/ShellScriptingGuide-zeroToHero/control-flow-in-shell-scripting/if-else.sh to my-new-bucket-fullofpotato
+warning: Skipping file /home/ec2-user/my-project-repo/my-first-repo/ShellScriptingGuide-zeroToHero/control-flow-in-shell-scripting/until_loop.sh/. File does not exist.
+                                                              
+Uploaded /home/ec2-user/my-project-repo/my-first-repo/ShellScriptingGuide-zeroToHero/control-flow-in-shell-scripting/until_loop.sh to my-new-bucket-fullofpotato
+warning: Skipping file /home/ec2-user/my-project-repo/my-first-repo/ShellScriptingGuide-zeroToHero/control-flow-in-shell-scripting/while_loop.sh/. File does not exist.
+                                                              
+Uploaded /home/ec2-user/my-project-repo/my-first-repo/ShellScriptingGuide-zeroToHero/control-flow-in-shell-scripting/while_loop.sh to my-new-bucket-fullofpotato
+
+**(without --recursive)
+
+[ec2-user@ip-172-31-60-84 control-flow-in-shell-scripting]$ sh backup_files_to_S3_using_for_Loop.sh 
+upload: ./Terminal_output.txt to s3://my-new-bucket-fullofpotato/Terminal_output.txt
+Uploaded /home/ec2-user/my-project-repo/my-first-repo/ShellScriptingGuide-zeroToHero/control-flow-in-shell-scripting/Terminal_output.txt to my-new-bucket-fullofpotato
+upload: ./backup_files_to_S3_using_for_Loop.sh to s3://my-new-bucket-fullofpotato/backup_files_to_S3_using_for_Loop.sh
+Uploaded /home/ec2-user/my-project-repo/my-first-repo/ShellScriptingGuide-zeroToHero/control-flow-in-shell-scripting/backup_files_to_S3_using_for_Loop.sh to my-new-bucket-fullofpotato
+upload: ./case.sh to s3://my-new-bucket-fullofpotato/case.sh      
+Uploaded /home/ec2-user/my-project-repo/my-first-repo/ShellScriptingGuide-zeroToHero/control-flow-in-shell-scripting/case.sh to my-new-bucket-fullofpotato
+upload: ./for_loop.sh to s3://my-new-bucket-fullofpotato/for_loop.sh
+Uploaded /home/ec2-user/my-project-repo/my-first-repo/ShellScriptingGuide-zeroToHero/control-flow-in-shell-scripting/for_loop.sh to my-new-bucket-fullofpotato
+upload: ./if-else.sh to s3://my-new-bucket-fullofpotato/if-else.sh
+Uploaded /home/ec2-user/my-project-repo/my-first-repo/ShellScriptingGuide-zeroToHero/control-flow-in-shell-scripting/if-else.sh to my-new-bucket-fullofpotato
+upload: ./until_loop.sh to s3://my-new-bucket-fullofpotato/until_loop.sh
+Uploaded /home/ec2-user/my-project-repo/my-first-repo/ShellScriptingGuide-zeroToHero/control-flow-in-shell-scripting/until_loop.sh to my-new-bucket-fullofpotato
+upload: ./while_loop.sh to s3://my-new-bucket-fullofpotato/while_loop.sh
+Uploaded /home/ec2-user/my-project-repo/my-first-repo/ShellScriptingGuide-zeroToHero/control-flow-in-shell-scripting/while_loop.sh to my-new-bucket-fullofpotato
+[ec2-user@ip-172-31-60-84 control-flow-in-shell-scripting]$ 
+
+##Example: Start Multiple EC2 Instances Using a for Loop
+[ec2-user@ip-172-31-60-84 control-flow-in-shell-scripting]$ sh start_multiple_EC2_instances_using_for_loop.sh 
+{
+    "StartingInstances": [
+        {
+            "CurrentState": {
+                "Code": 16,
+                "Name": "running"
+            },
+            "InstanceId": "i-00316ee24b0a1cf88",
+            "PreviousState": {
+                "Code": 16,
+                "Name": "running"
+            }
+        }
+    ]
+}
+Starting instance i-00316ee24b0a1cf88
+{
+    "StartingInstances": [
+        {
+            "CurrentState": {
+                "Code": 16,
+                "Name": "running"
+            },
+            "InstanceId": "i-049c5fc6fb16ca81d",
+            "PreviousState": {
+                "Code": 16,
+                "Name": "running"
+            }
+        }
+    ]
+}
+Starting instance i-049c5fc6fb16ca81d
+[ec2-user@ip-172-31-60-84 control-flow-in-shell-scripting]$ 
+
+##create_terminate_EC2 _using_while_loop
+ec2-user@ip-172-31-60-84 control-flow-in-shell-scripting]$ sh create_terminate_EC2\ _using_while_loop.sh
+Launched instance i-0ac5d9075ab028ec0. Waiting for 60 seconds...
+{
+    "TerminatingInstances": [
+        {
+            "CurrentState": {
+                "Code": 32,
+                "Name": "shutting-down"
+            },
+            "InstanceId": "i-0ac5d9075ab028ec0",
+            "PreviousState": {
+                "Code": 16,
+                "Name": "running"
+            }
+        }
+    ]
+}
+Terminated instance i-0ac5d9075ab028ec0.
+[ec2-user@ip-172-31-60-84 control-flow-in-shell-scripting]$ 
+
+####Example: Monitor S3 Bucket Size Using until Loop
+[ec2-user@ip-172-31-60-84 control-flow-in-shell-scripting]$ sh monitor_S3_bucket_size_using_until_loop.sh 
+Bucket size is below threshold. Checking again in 10 seconds...
+
+##Monitor S3 Bucket Size
+[ec2-user@ip-172-31-60-84 control-flow-in-shell-scripting]$ sh monitor_S3_bucket_size_using_until_loop.sh 
+Bucket size is within limits. Current size: 11395 bytes
+
+##Example: Enable Versioning on S3 Buckets Using case Statement
+
+[ec2-user@ip-172-31-60-84 control-flow-in-shell-scripting]$ sh enable_versioning_S3_using_case_statement.sh 
+Versioning is not enabled on my-new-bucket-fullofpotato. Enabling versioning...
+[ec2-user@ip-172-31-60-84 control-flow-in-shell-scripting]$ 
+
+##Useful AWS CLI Commands for Practice##
+ec2-user@ip-172-31-60-84 additional_aws_CLI_practice]$ sh create_S3_bucket_and_upload_file.sh 
+make_bucket: my-new-bucket-mr.patato
+upload: ./my_test_file.txt to s3://my-new-bucket-mr.patato/my_test_file.txt
+File my_test_file.txt uploaded to bucket my-new-bucket-mr.patato.
+[ec2-user@ip-172-31-60-84 additional_aws_CLI_practice]
+
+##Describe EC2 Instances in a Specific Region
+
+
+##Monitor S3 Bucket Size
+[ec2-user@ip-172-31-60-84 additional_aws_CLI_practice]$ sh monitor_S3_bucket_size.sh 
+Bucket size is within limits. Current size: 0 bytes
+[ec2-user@ip-172-31-60-84 additional_aws_CLI_practice]$ 

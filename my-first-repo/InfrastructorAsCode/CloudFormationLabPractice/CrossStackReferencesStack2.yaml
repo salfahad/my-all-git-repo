@@ -1,0 +1,18 @@
+Resources:
+  myInstance:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      ImageId: ami-066784287e358dad1
+      InstanceType: t2.micro
+     # KeyName: devserver-emtiaz
+      #DisableApiTermination: true #Termination Protection
+      SecurityGroupIds:
+        - !ImportValue CrossStackReferences-SecurityGroupID #Import from another Stack
+      UserData:
+        Fn::Base64: !Sub |
+          #!/bin/bash
+          yum update -y
+          service httpd start
+          chkconfig httpd on
+
+# aws cloudformation create-stack --stack-name importStack --template-body file://importStack.yaml --capabilities CAPABILITY_NAMED_IAM

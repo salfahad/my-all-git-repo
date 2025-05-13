@@ -1,0 +1,91 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  Example SAM Application with API Gateway
+
+Globals:
+  Function:
+    Timeout: 5
+    MemorySize: 128
+    Runtime: python3.12
+
+Parameters:
+  EnvType:
+    Description: Environment type.
+    Default: dev
+    Type: String
+    AllowedValues:
+      - prod
+      - dev
+    ConstraintDescription: must specify prod or test.
+
+Conditions:
+  CreateProdResources: !Equals
+    - !Ref EnvType
+    - prod
+
+Resources:
+  ApiGatewayApi:
+    Type: AWS::Serverless::Api
+    Properties:
+      StageName: !Ref EnvType
+
+  HelloWorldFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: app.lambda_handler
+      CodeUri: app/
+      Events:
+        ApiEvent:
+          Type: Api
+          Properties:
+            Path: /hello
+            Method: GET
+            RestApiId: !Ref ApiGatewayApi
+      Role: !GetAtt LambdaExecutionRole.Arn
+
+  CurrentDateFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: current_date.lambda_handler
+      CodeUri: current_date/
+      MemorySize: 128
+      Timeout: 3
+      Events:
+        ApiEvent:
+          Type: Api
+          Properties:
+            Path: /current-date
+            Method: GET
+            RestApiId: !Ref ApiGatewayApi
+      Role: !GetAtt LambdaExecutionRole.Arn
+
+  LambdaExecutionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaRole
+      Policies:
+        - PolicyName: S3AccessPolicy
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - s3:GetObject
+                  - s3:PutObject
+                  - s3:DeleteObject
+                Resource: arn:aws:s3:::my-new-bucket-fullofpotato/*
+
+Outputs:
+  ApiGatewayApi:
+    Description: "API Gateway endpoint URL"
+    Value: !Sub "https://${ApiGatewayApi}.execute-api.${AWS::Region}.amazonaws.com/"

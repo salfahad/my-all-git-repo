@@ -1,0 +1,98 @@
+{
+  "resource": "/oauth2/token",
+  "path": "/oauth2/token",
+  "httpMethod": "POST",
+  "headers": {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Authorization": "Basic NnVzcWZjbjhuMTY5dXM1Zzk1cGdzZHVqbjg6anU5cG9vNXVhYWFjZnRmczEyb25odXJ0YXU0a3ZkdTIwYmRwdmpta3Y2a3AxbTRsZm9z",
+    "Cache-Control": "no-cache",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "Cookie": "XSRF-TOKEN=14b72d0c-a48f-4667-b118-8fef3ffcbec2",
+    "Host": "auth.izaancloud.com",
+    "Postman-Token": "784c0548-1169-4608-ada2-a5ebaffdc370",
+    "User-Agent": "PostmanRuntime/7.42.0",
+    "X-Amzn-Trace-Id": "Root=1-671060ab-2295c8d1161db6d344647812",
+    "X-Forwarded-For": "97.154.111.234",
+    "X-Forwarded-Port": "443",
+    "X-Forwarded-Proto": "https"
+  },
+  "multiValueHeaders": {
+    "Accept": [
+      "*/*"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Authorization": [
+      "Basic NnVzcWZjbjhuMTY5dXM1Zzk1cGdzZHVqbjg6anU5cG9vNXVhYWFjZnRmczEyb25odXJ0YXU0a3ZkdTIwYmRwdmpta3Y2a3AxbTRsZm9z"
+    ],
+    "Cache-Control": [
+      "no-cache"
+    ],
+    "Content-Type": [
+      "application/x-www-form-urlencoded"
+    ],
+    "Cookie": [
+      "XSRF-TOKEN=14b72d0c-a48f-4667-b118-8fef3ffcbec2"
+    ],
+    "Host": [
+      "auth.izaancloud.com"
+    ],
+    "Postman-Token": [
+      "784c0548-1169-4608-ada2-a5ebaffdc370"
+    ],
+    "User-Agent": [
+      "PostmanRuntime/7.42.0"
+    ],
+    "X-Amzn-Trace-Id": [
+      "Root=1-671060ab-2295c8d1161db6d344647812"
+    ],
+    "X-Forwarded-For": [
+      "97.154.111.234"
+    ],
+    "X-Forwarded-Port": [
+      "443"
+    ],
+    "X-Forwarded-Proto": [
+      "https"
+    ]
+  },
+  "queryStringParameters": null,
+  "multiValueQueryStringParameters": null,
+  "pathParameters": null,
+  "stageVariables": null,
+  "requestContext": {
+    "resourceId": "y9cq7x",
+    "resourcePath": "/oauth2/token",
+    "httpMethod": "POST",
+    "extendedRequestId": "fxQKyFS7PHcEJ8g=",
+    "requestTime": "17/Oct/2024:00:56:11 +0000",
+    "path": "/oauth2/token",
+    "accountId": "666680140343",
+    "protocol": "HTTP/1.1",
+    "stage": "dev",
+    "domainPrefix": "auth",
+    "requestTimeEpoch": 1729126571145,
+    "requestId": "6d03ea4e-2427-43f2-970a-d937a3162cd0",
+    "identity": {
+      "cognitoIdentityPoolId": null,
+      "accountId": null,
+      "cognitoIdentityId": null,
+      "caller": null,
+      "sourceIp": "97.154.111.234",
+      "principalOrgId": null,
+      "accessKey": null,
+      "cognitoAuthenticationType": null,
+      "cognitoAuthenticationProvider": null,
+      "userArn": null,
+      "userAgent": "PostmanRuntime/7.42.0",
+      "user": null
+    },
+    "domainName": "auth.izaancloud.com",
+    "deploymentId": "2jcpcb",
+    "apiId": "vnallhqcsf"
+  },
+  "body": "scope=drlab_us1%2Fsubmit&grant_type=client_credentials",
+  "isBase64Encoded": false
+}

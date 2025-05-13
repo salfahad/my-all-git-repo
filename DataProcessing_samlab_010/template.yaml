@@ -1,0 +1,62 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Example SAM DataProcessing Application with S3 Trigger Event
+
+Resources:
+  DataProcessingBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Sub 'data-processing-mr-potato-bucket-${AWS::AccountId}-${AWS::Region}'
+
+  LambdaExecutionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+
+  S3BucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref DataProcessingBucket
+      PolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              AWS: !GetAtt LambdaExecutionRole.Arn
+            Action:
+              - s3:GetObject
+              - s3:ListBucket
+            Resource:
+              - !Sub 'arn:aws:s3:::${DataProcessingBucket}'  # Bucket ARN
+              - !Sub 'arn:aws:s3:::${DataProcessingBucket}/*'  # Objects ARN
+
+  DataProcessingFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: app.lambda_handler  # Ensure this matches your handler function
+      CodeUri: app/                 # Path to your Lambda function code
+      Runtime: python3.9            # Specify the runtime
+      Role: !GetAtt LambdaExecutionRole.Arn
+      Events:
+        S3UploadEvent:
+          Type: S3
+          Properties:
+            Bucket: !Ref DataProcessingBucket
+            Events:
+              - s3:ObjectCreated:*  # Trigger on object creation
+
+  DataProcessingFunctionS3Permission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      FunctionName: !Ref DataProcessingFunction
+      Action: lambda:InvokeFunction
+      Principal: s3.amazonaws.com
+      SourceArn: !GetAtt DataProcessingBucket.Arn

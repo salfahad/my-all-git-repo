@@ -1,0 +1,18 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Parameters:
+  EnvironmentType:
+    Type: String
+    Default: dev
+    AllowedValues:
+      - dev
+      - prod
+Conditions:
+  IsProd: !Equals [!Ref EnvironmentType, prod]
+Resources:
+  MyBucket:
+    Type: AWS::S3::Bucket
+    Condition: IsProd
+    Properties:
+      BucketName: !Join ['--', [my-prod-bucket-august-26th, !Ref AWS::AccountId]]
+
+      ##aws cloudformation create-stack --stack-name ParamAndConditionlab1 --template-body file://UsingConditions.yaml --parameters file://usingConditionsParam.json --capabilities CAPABILITY_NAMED_IAM

@@ -1,0 +1,23 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Resources:
+  StackSet:
+    Type: "AWS::CloudFormation::StackSet"
+    Properties:
+      StackSetName: "MyLabStackSets"    #template body copied from aws
+      TemplateBody: |
+        {
+          "AWSTemplateFormatVersion": "2010-09-09",
+          "Resources": {
+            "testWaitHandle": {
+              "Type": "AWS::CloudFormation::WaitConditionHandle"
+            }
+          }
+        }
+
+#      #TemplateURL: "https://s3.amazonaws.com/my-bucket/my-template.yaml"  ##what does it imply-investigate
+#      PermissionModel: SELF_MANAGED  #probably needed to add
+##      Parameters:
+##        - ParameterKey: VPCID
+##          ParameterValue: vpc-123456
+##      Capabilities:
+##        - CAPABILITY_NAMED_IAM

@@ -1,0 +1,11 @@
+[
+  {
+  "ParameterKey":"AppName",
+  "ParameterValue": "cf-app"
+},
+
+  {
+    "ParameterKey":"Environment",
+    "ParameterValue": "prod"
+  }
+]

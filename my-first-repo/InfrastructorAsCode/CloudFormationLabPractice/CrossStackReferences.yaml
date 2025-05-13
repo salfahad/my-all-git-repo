@@ -1,0 +1,74 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description:
+  I like to create vpc and have two subnets. 1 subnet will be public and the other private. I want to launch an ec2 instance in each subnets.
+Resources:
+  myVPC:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: 10.0.0.0/16
+      EnableDnsSupport: 'true'
+      EnableDnsHostnames: 'true'
+      Tags:
+        - Key: stack
+          Value: qa
+  myPublicSubnet:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref myVPC      #!Ref logicalName
+      CidrBlock: 10.0.0.0/17
+      AvailabilityZone: "us-east-1a"
+      MapPublicIpOnLaunch: true
+      Tags:
+        - Key: stack
+          Value: qa
+  myRouteTable:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId:
+        Ref: myVPC
+      Tags:
+        - Key: stack
+          Value: qa
+  myPublicSubnetRouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId:
+        Ref: myPublicSubnet
+      RouteTableId:
+        Ref: myRouteTable
+  mySecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: "This is a web application SG."
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: 0.0.0.0/0 # Allows SSH access from anywhere (modify as needed)
+        - IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          CidrIp: 0.0.0.0/0 # Allows HTTP access from anywhere
+        - IpProtocol: tcp
+          FromPort: 443
+          ToPort: 443
+          CidrIp: 0.0.0.0/0 # Allows HTTPS access from anywhere
+Outputs:
+  PublicSubnet:
+    Description: The subnet ID to use for public web servers
+    Value:
+      Ref: myPublicSubnet
+    Export:
+      Name:
+        'Fn::Sub': '${AWS::StackName}-SubnetID'
+  WebServerSecurityGroup:
+    Description: The security group ID to use for public web servers
+    Value:
+      'Fn::GetAtt':
+        - mySecurityGroup
+        - GroupId
+    Export:
+      Name:
+        'Fn::Sub': '${AWS::StackName}-SecurityGroupID'
+
+#$ aws cloudformation create-stack --stack-name exportStack --template-body file://export.yaml --capabilities CAPABILITY_NAMED_IAM

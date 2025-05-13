@@ -1,0 +1,7 @@
+<<<<<<< HEAD
+Hello, Git
+This is a change,
+=======
+Added a new line to Hello, Git
+>>>>>>> 1fa2783f12f3c971fe035a6ffdbfd10efb0606d2
+Another change.
